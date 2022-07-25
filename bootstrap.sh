@@ -16,18 +16,16 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
 		--exclude "bootstrap.sh" \
-		--exclude ".bash_prompt" \
-		--exclude ".bash_profile" \
-		--exclude ".bashrc" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
+	source ~/.bash_profile;
 	source $ZSH/oh-my-zsh.sh;
 	exec /bin/zsh;
 }
 
-unset installZshPlugins;
+# unset installZshPlugins;
 unset doIt;
 
-installZshPlugins;
+# installZshPlugins;
 doIt;
