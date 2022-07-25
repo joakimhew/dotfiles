@@ -181,3 +181,7 @@
 [init]
 
 	defaultBranch = main
+
+[user]
+	email = joakimhew@gmail.com
+	name = Joakim Hansson
