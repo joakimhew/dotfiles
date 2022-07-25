@@ -136,6 +136,7 @@ setopt HIST_EXPIRE_DUPS_FIRST
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 
+eval $(thefuck --alias)
+source <(kubectl completion zsh)
 
 source $ZSH/oh-my-zsh.sh
-eval $(thefuck --alias)
