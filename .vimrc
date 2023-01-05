@@ -21,7 +21,7 @@ set gdefault
 set encoding=utf-8 nobomb
 " Change mapleader
 let mapleader=","
-" Don’t add empty newlines at the end of files
+" Don't add empty newlines at the end of files
 set binary
 set noeol
 " Centralize backups, swapfiles and undo history
@@ -65,11 +65,11 @@ set laststatus=2
 @REM set mouse=a
 " Disable error bells
 set noerrorbells
-" Don’t reset cursor to start of line when moving around.
+" Don't reset cursor to start of line when moving around.
 set nostartofline
 " Show the cursor position
 set ruler
-" Don’t show the intro message when starting Vim
+" Don't show the intro message when starting Vim
 set shortmess=atI
 " Show the current mode
 set showmode
