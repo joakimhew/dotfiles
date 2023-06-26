@@ -13,6 +13,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH="$HOME/.gvm/bin:$PATH"
+export PATH="/usr/local/opt/portmidi/libexec/bin:$PATH"
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -171,3 +173,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # Set GVM_ROOT
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
+
+connect_ipad() {
+  osascript open_airplay_menu.scpt "iPad (3)"
+}
