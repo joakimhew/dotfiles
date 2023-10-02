@@ -19,6 +19,8 @@ export PATH="/usr/local/opt/portmidi/libexec/bin:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# export KIND_EXPERIMENTAL_PROVIDER=podman
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -176,5 +178,9 @@ export NVM_DIR="$HOME/.nvm"
 
 
 connect_ipad() {
-  osascript open_airplay_menu.scpt "iPad (3)"
+  osascript ~/open_airplay_menu.scpt "iPad"
 }
+
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
